@@ -1,5 +1,8 @@
 # DEADLOCK (Project: Madcamp Week 3)
 
+[![Vercel Deployment](https://deploy-badge.vercel.app/project/madcamp-week3-horrorgame-deadlock-w)](https://madcamp-week3-horrorgame-deadlock-w.vercel.app/)
+> **🕹️ Play Now / 게임하러 가기:** [https://madcamp-week3-horrorgame-deadlock-w.vercel.app/](https://madcamp-week3-horrorgame-deadlock-w.vercel.app/)
+
 **Deadlock** is a psychological horror puzzle game built with React, Vite, and Framer Motion.
 Players assume the role of an operator trapped in a bio-containment facility, tasked with managing unstable systems while being hunted by an entity that lurks in the darkness.
 
