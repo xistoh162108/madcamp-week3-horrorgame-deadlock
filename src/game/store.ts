@@ -26,7 +26,6 @@ import {
   BOOT,
   DEFENSE,
   STEALTH,
-  MONSTER,
 } from './constants';
 
 import { submitPuzzleAnswer } from './systems/puzzleSystem';

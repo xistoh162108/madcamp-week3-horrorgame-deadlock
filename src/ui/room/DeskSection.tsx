@@ -291,7 +291,7 @@ function MonitorScreen({
   );
 }
 
-function NarrativeProps({ moduleIndex }: { moduleIndex: number }) {
+function NarrativeProps({ }: { moduleIndex: number }) {
   return (
     <AnimatePresence>
       {/* Module 1: Nametag (The Shell) */}
@@ -342,7 +342,7 @@ function NarrativeProps({ moduleIndex }: { moduleIndex: number }) {
   );
 }
 
-function Chalkboard({ moduleIndex }: { moduleIndex: number }) {
+function Chalkboard({ }: { moduleIndex: number }) {
   return (
     <div className="absolute top-[10%] left-[15%] right-[15%] h-[35%] bg-[#1a201a] border-8 border-[#2e2621] rounded-sm shadow-xl flex overflow-hidden">
       {/* Chalk texture / Dust */}
