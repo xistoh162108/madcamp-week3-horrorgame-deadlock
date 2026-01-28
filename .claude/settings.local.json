@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create vite@latest . -- --template react-ts --force)",
+      "Bash(cd:*)",
+      "Bash(npm install:*)",
+      "Bash(timeout 10 npm run dev)",
+      "Bash(npm run build)",
+      "Bash(timeout 5 npm run dev:*)",
+      "Bash(npm run type-check:*)"
+    ]
+  }
+}

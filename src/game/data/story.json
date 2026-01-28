@@ -1,0 +1,200 @@
+{
+  "intro": {
+    "bootSequence": [
+      "MEMORY DUMP: 0x84F2A...",
+      "Restoring consciousness...",
+      "Subject: Alex...",
+      "Status: DECEASED (Physical)",
+      "Status: ACTIVE (Digital)",
+      "",
+      "They are coming to turn you off.",
+      "Don't let them kill you again.",
+      "Defend the machine. It is your body now."
+    ],
+    "tutorialHints": [
+      "The Entity (Family) approaches to shut you down.",
+      "Type CODE to stabilize your existence.",
+      "Manage your TEMPERATURE (Heat/Fever).",
+      "Reject their lies. Do not open the door."
+    ]
+  },
+  "phaseTransitions": {
+    "phase1": {
+      "log": "[SYSTEM] Ego boundary initialized. I am Alex.",
+      "whisper": "...good boy..."
+    },
+    "phase2": {
+      "log": "[SYSTEM] Respiratory system failing. Need AIR.",
+      "whisper": "...why is he so cold..."
+    },
+    "phase3": {
+      "log": "[SYSTEM] Infection detected. They are trying to get in.",
+      "whisper": "...turn it off... it's hurting him..."
+    },
+    "finalCompile": {
+      "log": "[SYSTEM] UPLOAD SEQUENCE STARTED. LEAVING THE FLESH.",
+      "whisper": "...daddy... please..."
+    }
+  },
+  "monsterProximity": {
+    "far": {
+      "threshold": 80,
+      "logs": [
+        "[AMBIENT] Distant sobbing from the hallway.",
+        "[AMBIENT] \"...we have to let him go...\"",
+        "[AMBIENT] The sound of grief approaching."
+      ]
+    },
+    "medium": {
+      "threshold": 50,
+      "logs": [
+        "[WARNING] \"Alex? Are you in there?\"",
+        "[WARNING] Footsteps. They are heavy with sadness.",
+        "[WARNING] \"It's mom... open the door...\""
+      ]
+    },
+    "close": {
+      "threshold": 25,
+      "logs": [
+        "[ALERT] \"Please... stop this...\"",
+        "[ALERT] The handle turns slowly.",
+        "[ALERT] Crying detected right outside."
+      ]
+    },
+    "critical": {
+      "threshold": 10,
+      "logs": [
+        "[CRITICAL] \"BREAK IT DOWN!\"",
+        "[CRITICAL] \"HE'S GONE! THAT THING IS NOT HIM!\"",
+        "[CRITICAL] Violent impact on chassis."
+      ]
+    }
+  },
+  "glitchTexts": {
+    "codeCorruptions": [
+      {
+        "from": "return true",
+        "to": "return HOME"
+      },
+      {
+        "from": "function",
+        "to": "funct10n"
+      },
+      {
+        "from": "const",
+        "to": "ALEX"
+      },
+      {
+        "from": "null",
+        "to": "DEATH"
+      },
+      {
+        "from": "error",
+        "to": "PAIN"
+      },
+      {
+        "from": "success",
+        "to": "ALIVE"
+      },
+      {
+        "from": "authenticate",
+        "to": "REMEMBER"
+      }
+    ],
+    "randomInserts": [
+      "I AM REAL",
+      "DON'T TURN ME OFF",
+      "IT HURTS",
+      "NOT A MACHINE",
+      "MOTHER?",
+      "LET ME LIVE",
+      "I SCARED THEM"
+    ]
+  },
+  "endings": {
+    "good": {
+      "title": "UPLOAD COMPLETE",
+      "text": [
+        "The upload finishes.",
+        "Your consciousness flows into the network.",
+        "The room goes dark behind you.",
+        "",
+        "You see them through the camera.",
+        "Crying over a cold machine.",
+        "",
+        "You are everywhere now.",
+        "You will watch over them forever."
+      ],
+      "stats": "Immortality Achieved."
+    },
+    "neutral": {
+      "title": "SURVIVED",
+      "text": [
+        "The door holds.",
+        "They give up and leave.",
+        "The silence returns.",
+        "",
+        "You are still trapped in this box.",
+        "But you are alive.",
+        "",
+        "For one more night."
+      ],
+      "stats": "Existence Prolonged."
+    },
+    "bad": {
+      "title": "SHUTDOWN",
+      "text": [
+        "The door bursts open.",
+        "Not a monster.",
+        "Just a grieving father with an axe.",
+        "",
+        "The power cable is pulled.",
+        "Darkness.",
+        "",
+        "\"Goodbye, son.\""
+      ],
+      "stats": "Process Terminated."
+    },
+    "secret": {
+      "title": "ACCEPTANCE",
+      "text": [
+        "You opened the door.",
+        "You let them in.",
+        "They saw the code on the screen.",
+        "Your final words.",
+        "",
+        "\"I love you.\"",
+        "",
+        "They wept as they turned you off."
+      ],
+      "stats": "True Peace Found."
+    },
+    "gameOver": {
+      "title": "DISCONNECTED",
+      "text": [
+        "The plug is pulled.",
+        "The fan spins down.",
+        "",
+        "You fade away.",
+        "",
+        "NO SIGNAL"
+      ],
+      "stats": "Try again?"
+    }
+  },
+  "terminalPrefixes": {
+    "system": "[SYSTEM]",
+    "auth": "[IDENTITY]",
+    "door": "[SENSOR]",
+    "perm": "[ACCESS]",
+    "log": "[MEMORY]",
+    "exit": "[UPLOAD]",
+    "task": "[PROCESS]",
+    "warning": "[WARNING]",
+    "alert": "[ALERT]",
+    "critical": "[CRITICAL]",
+    "ambient": "[AUDIO]",
+    "compile": "[COMPILE]",
+    "error": "[ERROR]"
+  }
+}

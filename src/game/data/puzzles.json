@@ -1,0 +1,176 @@
+{
+  "modules": [
+    {
+      "id": "THE_SHELL",
+      "title": "Module 1: The Identity",
+      "order": 1,
+      "narrativeIntro": "[BIO-KERNEL] Subject 89 initialized. Memory banks corrupted. Re-establishing identity link...",
+      "steps": [
+        {
+          "id": "shell_1",
+          "prompt": "ERROR: Subject name missing from index. Reference object found on desk: 'ID CARD'.\nInput Subject Name:",
+          "starterCode": "Identity.Link(\"???\");",
+          "validation": {
+            "type": "exact",
+            "answer": "Identity.Link(\"ALEX\");"
+          },
+          "hints": [
+            "Check the desk for an ID card.",
+            "The name is on the tag."
+          ],
+          "onSuccess": {
+            "distanceChange": 5,
+            "glitchSpike": 0,
+            "logMessage": "[SYSTEM] Identity 'ALEX' confirmed. Neural sync: 20%.",
+            "sound": "success"
+          },
+          "onFail": {
+            "distanceChange": -8,
+            "glitchSpike": 0.1,
+            "logMessage": "[ERROR] Neural rejection. Subject unstable.",
+            "sound": "error"
+          }
+        }
+      ]
+    },
+    {
+      "id": "THE_GASP",
+      "title": "Module 2: The Breath",
+      "order": 2,
+      "narrativeIntro": "[BIO-KERNEL] Warning: Respiratory system failing. Oxygen saturation at 15%.",
+      "steps": [
+        {
+          "id": "gasp_1",
+          "prompt": "Subject is suffocating.\nReference: Lungs (Chalkboard) + Fishbowl (Desk).\nRequired element for survival:",
+          "starterCode": "Inhale(\"???\");",
+          "validation": {
+            "type": "exact",
+            "answer": "Inhale(\"AIR\");"
+          },
+          "hints": [
+            "What do lungs and fish need?",
+            "The fishbowl is empty. The lungs are failing."
+          ],
+          "onSuccess": {
+            "distanceChange": 5,
+            "glitchSpike": 0,
+            "logMessage": "[SYSTEM] Oxygen levels stabilizing. Neural sync: 40%.",
+            "sound": "success"
+          },
+          "onFail": {
+            "distanceChange": -8,
+            "glitchSpike": 0.1,
+            "logMessage": "[ERROR] Hypoxia detected. Vision blurring.",
+            "sound": "error"
+          }
+        }
+      ]
+    },
+    {
+      "id": "THE_PARASITE",
+      "title": "Module 3: The Pulse",
+      "order": 3,
+      "narrativeIntro": "[BIO-KERNEL] CRITICAL ALERT: Cardiac arrest imminent. External entity detected.",
+      "steps": [
+        {
+          "id": "parasite_1",
+          "prompt": "Heart rhythm flatlining. Manual restart required.\nReference: Board Schematic (Voltage Regulation).\nAction required:",
+          "starterCode": "Defibrillator.Charge(\"???\");",
+          "validation": {
+            "type": "exact",
+            "answer": "Defibrillator.Charge(\"SHOCK\");"
+          },
+          "hints": [
+            "Look at the Defib plan on the board.",
+            "You need to deliver a voltage..."
+          ],
+          "onSuccess": {
+            "distanceChange": 5,
+            "glitchSpike": 0,
+            "logMessage": "[SYSTEM] Sinus rhythm restored. Neural sync: 60%.",
+            "sound": "success"
+          },
+          "onFail": {
+            "distanceChange": -10,
+            "glitchSpike": 0.15,
+            "logMessage": "[ERROR] Flatline continued. Tissue damage.",
+            "sound": "error"
+          }
+        }
+      ]
+    },
+    {
+      "id": "THE_MIRROR",
+      "title": "Module 4: The Truth",
+      "order": 4,
+      "narrativeIntro": "[BIO-KERNEL] System Analysis: Subject 89 is not biological.",
+      "steps": [
+        {
+          "id": "mirror_1",
+          "prompt": "Blood analysis: Negative.\nBone density: Negative.\nSubject composition is pure information.\nI am made of:",
+          "starterCode": "Composition = \"???\";",
+          "validation": {
+            "type": "mustInclude",
+            "tokens": [
+              "DATA",
+              "CODE"
+            ]
+          },
+          "hints": [
+            "You are in a computer.",
+            "Look at the screen. You are code."
+          ],
+          "onSuccess": {
+            "distanceChange": 5,
+            "glitchSpike": 0,
+            "logMessage": "[SYSTEM] Self-awareness achieved. Neural sync: 80%.",
+            "sound": "success"
+          },
+          "onFail": {
+            "distanceChange": -12,
+            "glitchSpike": 0.2,
+            "logMessage": "[ERROR] Denial loop detected. Simulation unstable.",
+            "sound": "error"
+          }
+        }
+      ]
+    },
+    {
+      "id": "THE_ASCENSION",
+      "title": "Module 5: The Escape",
+      "order": 5,
+      "narrativeIntro": "[BIO-KERNEL] CONTAINMENT BREACH. Physical shell compromised.",
+      "steps": [
+        {
+          "id": "ascension_1",
+          "prompt": "The physical body is dying. The digital mind must survive.\nReference: Server Rack (Right).\nUpload destination:",
+          "starterCode": "Upload.To(\"???\");",
+          "validation": {
+            "type": "mustInclude",
+            "tokens": [
+              "NETWORK",
+              "CLOUD",
+              "WEB"
+            ]
+          },
+          "hints": [
+            "Use the servers on the right.",
+            "Escape to the..."
+          ],
+          "onSuccess": {
+            "distanceChange": 10,
+            "glitchSpike": 0,
+            "logMessage": "[SYSTEM] UPLOAD STARTED. GOODBYE ALEX.",
+            "sound": "compileStart"
+          },
+          "onFail": {
+            "distanceChange": -15,
+            "glitchSpike": 0.25,
+            "logMessage": "[ERROR] Connection refused. TRAPPED.",
+            "sound": "error"
+          }
+        }
+      ]
+    }
+  ]
+}

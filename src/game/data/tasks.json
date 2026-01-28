@@ -1,0 +1,110 @@
+{
+  "tasks": [
+    {
+      "id": "copy",
+      "label": "Task: Copy Files",
+      "description": "Safe file copy operation. Low risk, low reward.",
+      "icon": "📁",
+      "durationSec": 25,
+      "cooldownSec": 12,
+      "distanceBoost": 18,
+      "speedIncrease": 0,
+      "returnPenalty": {
+        "glitchSpike": 0,
+        "speedBurst": 0,
+        "blackout": false
+      },
+      "sideEffect": null,
+      "flavorText": {
+        "assign": "[TASK] Copying files to remote backup...",
+        "return": "[TASK] File copy complete. It returns."
+      }
+    },
+    {
+      "id": "serverCheck",
+      "label": "Task: Server Check",
+      "description": "Major server inspection. High reward but increases danger permanently.",
+      "icon": "🖥️",
+      "durationSec": 45,
+      "cooldownSec": 30,
+      "distanceBoost": 35,
+      "speedIncrease": 0.15,
+      "returnPenalty": {
+        "glitchSpike": 0.3,
+        "speedBurst": 0.5,
+        "blackout": false
+      },
+      "sideEffect": null,
+      "flavorText": {
+        "assign": "[TASK] Dispatched for server room inspection...",
+        "return": "[TASK] Server check complete. It's faster now. It learned."
+      }
+    },
+    {
+      "id": "codeReview",
+      "label": "Task: Code Review",
+      "description": "Reviews code beside you. Causes input interference while active.",
+      "icon": "👁️",
+      "durationSec": 35,
+      "cooldownSec": 20,
+      "distanceBoost": 25,
+      "speedIncrease": 0.05,
+      "returnPenalty": {
+        "glitchSpike": 0.15,
+        "speedBurst": 0,
+        "blackout": false
+      },
+      "sideEffect": {
+        "type": "inputLag",
+        "value": 150
+      },
+      "flavorText": {
+        "assign": "[TASK] Code review initiated. It watches from beside you...",
+        "return": "[TASK] Review complete. It steps back. For now."
+      }
+    },
+    {
+      "id": "packetCapture",
+      "label": "Task: Packet Capture",
+      "description": "Network analysis. Rewards a hint token.",
+      "icon": "📡",
+      "durationSec": 40,
+      "cooldownSec": 25,
+      "distanceBoost": 28,
+      "speedIncrease": 0.08,
+      "returnPenalty": {
+        "glitchSpike": 0.2,
+        "speedBurst": 0.3,
+        "blackout": false
+      },
+      "sideEffect": {
+        "type": "hint",
+        "value": 1
+      },
+      "flavorText": {
+        "assign": "[TASK] Capturing network packets...",
+        "return": "[TASK] Capture complete. Data fragment recovered. +1 Hint Token"
+      }
+    },
+    {
+      "id": "garbageCollection",
+      "label": "Task: Garbage Collection",
+      "description": "Memory cleanup. Long duration but causes blackout on return.",
+      "icon": "🗑️",
+      "durationSec": 60,
+      "cooldownSec": 35,
+      "distanceBoost": 32,
+      "speedIncrease": 0.1,
+      "returnPenalty": {
+        "glitchSpike": 0.1,
+        "speedBurst": 0,
+        "blackout": true
+      },
+      "sideEffect": null,
+      "flavorText": {
+        "assign": "[TASK] Garbage collection in progress. Memory clearing...",
+        "return": "[TASK] Collection complete. BLACKOUT. The lights die."
+      }
+    }
+  ]
+}
